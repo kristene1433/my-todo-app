@@ -1,0 +1,59 @@
+.notification-icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notification-icon {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  .notification-dropdown {
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .notification-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notification-dropdown li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--secondary-color);
+  }
+  
+  .notification-dropdown li:last-child {
+    border-bottom: none;
+  }
+  
+  
+  .notification-dropdown p {
+    padding: 10px;
+    text-align: center;
+  }
+  

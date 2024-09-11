@@ -1,0 +1,63 @@
+/* index.css or App.css */
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #6200ee;
+  --secondary-color: #03dac6;
+  --font-family: Arial, sans-serif;
+  --border-radius: 4px;
+  --button-background-color: #6200ee;
+  --button-text-color: #ffffff;
+  --link-color: #6200ee;
+  --input-background-color: #f1f1f1;
+  --input-text-color: #000000;
+  --input-border-color: #cccccc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input {
+  background-color: var(--input-background-color);
+  color: var(--input-text-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.iscompleted {
+  text-decoration: line-through;
+  color: gray;
+}
