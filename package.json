@@ -28,15 +28,14 @@
     "react-scripts": "5.0.1",
     "string-similarity": "^4.0.4",
     "uuid": "^10.0.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "ws": "^8.18.0"
   },
   "scripts": {
-    "start": "cross-env PORT=3000 react-scripts start",
+    "start": "node server.js",
     "server": "nodemon server.js",
-    "dev": "concurrently \"npm run server\" \"npm start\"",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -58,6 +57,7 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11"
   }
 }
